@@ -14,68 +14,236 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="jumbotron text-center">
-                    <h1>Quiz</h1>
-                    <hr>
-                    <hr>
-                    <h3 class="my-3" id="question">Take the quiz to find your best match!</h3>
-                    <hr>
-                    <br>
-                    <div class="row justify-content-center">
-                        <div class=col-md-2>
-                            <button class="btn btn-danger" id="btn1">1</button>
-                        </div>
-                        <div class=col-md-2>
-                            <button class="btn btn-warning" id="btn2">2</button>
-                        </div>
-                        <div class=col-md-2>
-                            <button class="btn btn-success" id="btn3">3</button>
-                        </div>
-                        <div class=col-md-2>
-                            <button class="btn btn-info" id="btn4">4</button>
-                        </div>
-                        <div class=col-md-2>
-                            <button class="btn btn-primary" id="btn5">5</button>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center text-center">
-                        <div class=col-md-2>
-                            <h5 id="btnTip1">Not Very</h5>
-                        </div>
-                        <div class=col-md-2>
-                            <h5 id="btnTip2"></h5>
-                        </div>
-                        <div class=col-md-2>
-                            <h5 id="btnTip3"></h5>
-                        </div>
-                        <div class=col-md-2>
-                            <h5 id="btnTip4"></h5>
-                        </div>
-                        <div class=col-md-2>
-                            <h5 id="btnTip5">Very Much</h5>
-                        </div>
-                    </div>
+
+<div class="container">
+
+ <h3>Please use the scale below to indicate whether you agree or disagree with the following:</h3>
+    <hr>
+    <div class="row justify-content-center" style="text-align: center">
+            <div class=col-md-2>
+                <button class="btn btn-danger" id="btn1">1</button>
+                <h5 id="btnTip1">Strongly Agree</h5>
+            </div>
+            <div class=col-md-2>
+                <button class="btn btn-warning" id="btn2">2</button>
+                <h5 id="btnTip1">Agree</h5>
+            </div>
+            <div class=col-md-2>
+                <button class="btn btn-success" id="btn3">3</button>
+                <h5 id="btnTip1">Neutral</h5>
+            </div>
+            <div class=col-md-2>
+                <button class="btn btn-info" id="btn4">4</button>
+                <h5 id="btnTip1">Disagree</h5>
+            </div>
+            <div class=col-md-2>
+                <button class="btn btn-primary" id="btn5">5</button>
+                <h5 id="btnTip5">Strongly Disagree</h5>
+            </div>
+    </div>
+
+    <hr>
+
+    <h2>About You</h2>
+    
+    <input type="text" name="" id="name" class="form-control" required placeholder="What's your name? (Required)"/>
+    <br>
+    <input type="text" name="" id="photo" class="form-control" required placeholder="Link a photo for your Profile Picture (Required)"/>
+    <hr>
+<br>
+    <!--Questions-->
+    <h4>Dogs are better than cats</h4>
+    <select data-placeholder="" class="chosen-select" id="q1">
+        <option value="" selected></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h4>Pepsi is trash</h4>
+    <select data-placeholder="" class="chosen-select" id="q2">
+        <option value="" selected></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h4>Beaches make the best vacation spots</h4>
+    <select data-placeholder="" class="chosen-select" id="q3">
+        <option value="" selected></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h4>Family first</h4>
+    <select data-placeholder="" class="chosen-select" id="q4">
+        <option value="" selected></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h4>It's nice to be nice</h4>
+    <select data-placeholder="" class="chosen-select" id="q5">
+        <option value="" selected></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h4>Pasta is all I need</h4>
+    <select data-placeholder="" class="chosen-select" id="q6">
+        <option value="" selected></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h4>Black Mirror is a good show</h4>
+    <select data-placeholder="" class="chosen-select" id="q7">
+        <option value="" selected></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h4>I should read more</h4>
+    <select data-placeholder="" class="chosen-select" id="q8">
+        <option value="" selected></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h4>Exercising is overrated</h4>
+    <select data-placeholder="" class="chosen-select" id="q9">
+        <option value="" selected></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+
+    <h4>Insomniacs are more interesting</h4>
+    <select data-placeholder="" class="chosen-select" id="q10">
+        <option value="" selected></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+        <br>
+        <br>
+
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+            <!-- fa tags go btwn i & > -->
+            <i></i>Submit</i>
+        </button>
+
+        <br>
+
+        <footer class="footer">
+            <div class="container">
+                <p>
+                    <a href="/api/friends">API Friends List</a>
+                    |
+                    <a href="https://github.com/GeorgeSchlosser/FriendFinder">GitHub Repo</a>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <div id="resultsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                    <h2 class="modal-title">Best Match</h2>
+                </div>
+
+                <div class="modal-body">
+                    <h2 id="matchName"></h2>
+                    <img id="matchImg" src="https://via.placeholder.com/400x400"
+                        alt="Placeholder image in case user pic doesn't show" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Close
+                    </button>
                 </div>
             </div>
         </div>
-        <div class="row">
-
-        </div>
     </div>
 
-
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
-    <script src="../data/survey.js"></script>
+    <script type="text/javascript">
+        // form inputs to be captured & validated
+        $("#submit").on("click", function () {
+            function validateForm() {
+                var isValid = true;
+                $(".form-control").each(function () {
+                    if ($(this).val() === "") isValid = false;
+                });
+                $(".chosen-select").each(function () {
+                    if ($(this).val() === "") isValid = false;
+                });
+                return isValid;
+            }
+            // create object for user data
+            if (validateForm() == true) {
+                var userData = {
+                    name: $("#name").val(),
+                    photo: $("#photo").val(),
+                    scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
+                    ]
+                };
+                // grab URL of website & use ajax post to friends api
+                var currentURL = window.location.origin;
+                $.post(currentURL + "/api/friends", userData, function (data) {
+                    $("#matchName").text(data.name);
+                    $("#matchImg").attr("src", data.photo);
+                    $("#resultsModal").modal("toggle");
+                });
+            }
+            else {
+                alert("All fields required!");
+            }
+            return false;
+        });
+    </script>
 </body>
 
 </html>
